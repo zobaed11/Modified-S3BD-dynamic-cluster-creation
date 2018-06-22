@@ -1,4 +1,6 @@
-# S3BD Running Instructions
+Our work is a modified version of S3BD. Hence, the running instructions are same.
+
+# Running Instructions of the proposed approach
 
 The Secure Semantic Search over Encrypted Big Data in the Cloud (S3BD) is a simple to use semantic search system.  S3BD is composed of two projects, one for the client and cloud.  These two can be run on the same machine, or on two machines connected by a network.  There are three primary actions you can perform when running the system: Uploading documents, Partitioning the dataset into clusters, and Searching over the dataset.
 
@@ -32,6 +34,5 @@ The config files for each project can be found in the utilities subdirectory of 
 ### Cloud
 
   * socketPort - the socket used for data transfers.  Ensure this is the same on both client and cloud.
-  * abstractIndexCound - the number of terms that will be included in an abstract index.
-  * k - the number of clusters created during partitioning.
+  * abstractIndexCound - the number of terms that will be included in an abstract index. We set it as 10 according to the paper.
   * calcMetrics - only set this to true if you are testing speeds.
